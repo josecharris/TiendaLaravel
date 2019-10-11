@@ -21,7 +21,7 @@
                     <p> {{ $product->description }} </p>
                     <span class="badge badge-success">Precio: ${{ number_format($product->price,2) }}</span>
                     <p>
-                        <a class="btn btn-warning" href="#"><i class="fa fa-cart-plus"></i> La quiero</a>
+                        <a class="btn btn-warning" href="{{ route('cart-add', $product->slug) }}"><i class="fa fa-cart-plus"></i> La quiero</a>
                     </p>
                 </div>
             </div>
